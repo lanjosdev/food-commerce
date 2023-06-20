@@ -13,10 +13,12 @@ export default function App() {
     <BrowserRouter>
 
       <Theme>
-        <AppRoutes />
+        {/* Onde renderiza a aplicação */}
+        <AppRoutes /> 
         
         <GlobalStyle />
         <Normalize />
+
       </Theme>
 
     </BrowserRouter>

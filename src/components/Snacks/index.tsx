@@ -1,6 +1,9 @@
 // Styled Components
 import { ContainerSnacks } from "./styles";
 
+// Funcionalidades:
+import { currencyFormat } from "../../utils/currencyFormat";
+
 // Icons:
 import { FiPlus } from 'react-icons/fi';
 
@@ -21,7 +24,7 @@ export function SnacksContainer({ snacks }:SnacksProps) {
                     />
                     <p>{snack.description}</p>
                     <div>
-                        <strong>{snack.price}</strong>
+                        <strong>{currencyFormat(snack.price)}</strong>
                         <button type="button"><FiPlus /></button>
                     </div>
                 </article>

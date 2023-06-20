@@ -22,6 +22,7 @@ export const Container = styled.main`
     
 
     @media screen and (max-width: 720px) {
+      padding-bottom: 10rem;
       /* display: flex;
       flex-direction:column;
       padding-bottom: 8rem; */
