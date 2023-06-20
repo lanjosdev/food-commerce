@@ -80,16 +80,23 @@ export const ContainerSidebar = styled.aside<ContainerProps>` // Onde recebe a p
                     font-weight: 600;
                     transition: color 0.4s;
 
-                    display: none;
+                    /* display: none; */
+                    opacity: 0;
+
+                    /* transition: display 1s; */
+                    transition: 0.3s ease-in-out;
+
 
                     ${
                     ({ isMenuOpen })=> {
                         return isMenuOpen 
                             ? css`
-                                display: inline;
+                                /* display: inline; */
+                                opacity: 1;
                                 `
                             : css`
-                                display: none;
+                                /* display: none; */
+                                opacity: 0;
                                 `
                     }
                     }
@@ -142,9 +149,9 @@ export const ContainerSidebar = styled.aside<ContainerProps>` // Onde recebe a p
 
         button {
             display: none;
-            img {
+            /* img {
                 display: none;
-            }
+            } */
         }
 
         nav {
