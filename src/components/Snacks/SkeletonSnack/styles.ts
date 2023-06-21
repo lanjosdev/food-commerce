@@ -38,9 +38,9 @@ export const Container = styled.div`
 
   background: linear-gradient(
     90deg,
-    ${({ theme }) => theme.colors.gray900} 0%,
+    #5D5E51 0%,
     #0a0a0a 40%,
-    ${({ theme }) => theme.colors.gray900} 100%
+    #5D5E51 100%
   );
   background-size: 200%;
   border-radius: 10px;
