@@ -3,7 +3,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_BASE_URL,
+  baseURL: 'https://json-food-commerce.vercel.app/',
 })
 
 // https://seusite.com/api/burgers
